@@ -1,17 +1,28 @@
+// general stripping and img sizing
 html {
     font-size: 125%;
+    color: $black;
 }
 
+nav,
 ul,
 a,
 h1,
 h2,
 h3,
 form,
-button {
+button,
+li {
     margin: 0;
     padding: 0;
     font-family: $headerFont;
+}
+
+h1,
+h2,
+h3,
+button {
+    text-transform: uppercase;
 }
 
 img {
@@ -37,4 +48,30 @@ nav ul li {
     max-width: 1440px;
     margin: 0 auto;
     width: 1440px;
+}
+
+//general styles for main
+.mainSectionOne,
+.mainSectionTwo,
+.mainSectionFour {
+    background-color: $primary4;
+}
+
+.mainSectionThree,
+.mainSectionFive {
+    background: $white;
+}
+
+//button style
+button {
+    padding: 10px 30px;
+    border: 1px transparent solid;
+    background: $black;
+    color: $accent;
+}
+
+button:hover,
+button:focus {
+    background: $accent;
+    color: $black;
 }

@@ -237,18 +237,28 @@ html {
 
 html {
   font-size: 125%;
+  color: #171717;
 }
 
+nav,
 ul,
 a,
 h1,
 h2,
 h3,
 form,
-button {
+button,
+li {
   margin: 0;
   padding: 0;
   font-family: "Oswald", sans-serif;
+}
+
+h1,
+h2,
+h3,
+button {
+  text-transform: uppercase;
 }
 
 img {
@@ -275,4 +285,123 @@ nav ul li a {
   max-width: 1440px;
   margin: 0 auto;
   width: 1440px;
+}
+
+.mainSectionOne,
+.mainSectionTwo,
+.mainSectionFour {
+  background-color: #F6F6F6;
+}
+
+.mainSectionThree,
+.mainSectionFive {
+  background: #FFFFFF;
+}
+
+button {
+  padding: 10px 30px;
+  border: 1px transparent solid;
+  background: #171717;
+  color: #F38D8D;
+}
+
+button:hover,
+button:focus {
+  background: #F38D8D;
+  color: #171717;
+}
+
+.mainHeader {
+  height: 80vh;
+  background-color: #B9DDE7;
+}
+
+.mainHeader nav {
+  height: 10vh;
+}
+
+.mainHeader nav ul {
+  height: 100%;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  text-align: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainHeader h3 {
+  font-size: 2.1rem;
+}
+
+h1 {
+  font-size: 7rem;
+  position: relative;
+}
+
+.titleContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.titleContainer .title {
+  position: relative;
+  margin-right: 200px;
+}
+
+.titleContainer .title .titleImg {
+  width: 150px;
+  position: absolute;
+  top: -35px;
+  right: -40px;
+}
+
+.headerImg {
+  width: 35%;
+  position: relative;
+  top: 50px;
+  -webkit-box-shadow: 20px 20px 0 0 #FFFFFF;
+          box-shadow: 20px 20px 0 0 #FFFFFF;
+}
+
+.mainSectionOne {
+  height: 40vh;
+}
+
+.sectionOneContainer {
+  height: 40vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+  margin-left: auto;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.sectionOneContainer h2 {
+  margin-top: 50px;
+}
+
+.sectionOneContainer button {
+  margin-bottom: 50px;
 }
