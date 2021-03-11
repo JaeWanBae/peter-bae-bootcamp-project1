@@ -262,3 +262,17 @@ img {
 body {
   font-family: "Cabin", sans-serif;
 }
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 1440px;
+}

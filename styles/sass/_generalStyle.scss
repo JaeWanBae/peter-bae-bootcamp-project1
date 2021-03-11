@@ -26,3 +26,15 @@ body {
     font-family: $bodyFont;
 }
 
+nav ul li {
+    list-style: none;
+    a {
+        text-decoration: none;
+    }
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 1440px;
+}
