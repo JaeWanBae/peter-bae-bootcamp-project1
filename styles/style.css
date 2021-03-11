@@ -284,7 +284,7 @@ nav ul li a {
 .wrapper {
   max-width: 1440px;
   margin: 0 auto;
-  width: 1440px;
+  width: 100%;
 }
 
 .mainSectionOne,
@@ -375,12 +375,12 @@ h1 {
           box-shadow: 20px 20px 0 0 #FFFFFF;
 }
 
-.mainSectionOne {
+.mainSectionOne,
+.sectionOneFlex {
   height: 40vh;
 }
 
-.sectionOneContainer {
-  height: 40vh;
+.sectionOneFlex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -398,10 +398,44 @@ h1 {
           justify-content: space-evenly;
 }
 
-.sectionOneContainer h2 {
+.sectionOneFlex h2 {
   margin-top: 50px;
 }
 
-.sectionOneContainer button {
+.sectionOneFlex button {
   margin-bottom: 50px;
+}
+
+.mainSectionTwo,
+.sectionTwoFlex {
+  height: 50vh;
+}
+
+.sectionTwoFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.sectionTwoContent {
+  width: calc(50% - 200px);
+  position: relative;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.icon {
+  position: absolute;
+  left: -75px;
+  top: -5px;
+}
+
+.icon i {
+  border-radius: 50%;
+  background-color: #B9DDE7;
+  padding: 10px;
 }
