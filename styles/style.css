@@ -466,7 +466,7 @@ h3 {
 
 .sectionThreeFlex img,
 .sectionThreeFlex .textContainer {
-  width: calc(50%);
+  width: 50%;
 }
 
 .textContainer {
@@ -522,6 +522,29 @@ h3 {
 .fourth button {
   -ms-flex-item-align: end;
       align-self: flex-end;
+}
+
+.mainSectionThree {
+  position: relative;
+}
+
+.imgOneShadow,
+.imgTwoShadow {
+  width: 51%;
+  height: 45%;
+  position: absolute;
+}
+
+.imgOneShadow {
+  background-color: #68B0C1;
+  top: 0px;
+}
+
+.imgTwoShadow {
+  background-color: #B9DDE7;
+  right: 0;
+  top: 60%;
+  width: 49%;
 }
 
 .mainSectionFour img {

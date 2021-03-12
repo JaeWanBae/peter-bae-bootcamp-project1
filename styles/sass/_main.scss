@@ -119,7 +119,7 @@ h3 {
     flex-wrap: wrap;
     img, 
     .textContainer {
-        width: calc(50%);
+        width: 50%;
     }
 }
 
@@ -162,6 +162,28 @@ h3 {
     }
 }
 
+.mainSectionThree  {
+    position: relative;
+}
+
+.imgOneShadow,
+.imgTwoShadow {
+    width: 51%;
+    height: 45%;
+    position: absolute;
+}
+
+.imgOneShadow {
+    background-color: $primary2;
+    top: 0px;
+}
+
+.imgTwoShadow {
+    background-color: $primary3;
+    right: 0;
+    top: 60%;
+    width: 49%;
+}
 
 
 //Section Four Styling
