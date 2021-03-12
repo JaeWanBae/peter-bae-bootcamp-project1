@@ -547,6 +547,10 @@ h3 {
   width: 49%;
 }
 
+.mainSectionFour {
+  height: 50vh;
+}
+
 .mainSectionFour img {
-  width: 10%;
+  width: 25%;
 }
