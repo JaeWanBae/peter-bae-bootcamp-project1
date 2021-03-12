@@ -222,3 +222,13 @@ h3 {
 }
 
 //section footer style
+footer {
+    height: 5vh;
+    background-color: $black;
+    color: $white;
+    text-align: center;
+}
+
+footer p {
+    padding-top: 15px;
+}
