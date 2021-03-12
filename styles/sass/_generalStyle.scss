@@ -15,14 +15,30 @@ button,
 li {
     margin: 0;
     padding: 0;
+}
+
+nav,
+h1,
+h2,
+h3,
+form,
+button {
     font-family: $headerFont;
 }
 
 h1,
 h2,
 h3,
+input[type="submit"],
 button {
+    letter-spacing: 1px;
     text-transform: uppercase;
+}
+
+.blogHeader h1,
+.contactHeader h1 {
+    line-height: 92px;
+    font-size: 4rem;
 }
 
 img {
@@ -35,6 +51,8 @@ img {
 
 body {
     font-family: $bodyFont;
+    letter-spacing: 0;
+    line-height: 32px;
 }
 
 nav ul li {
@@ -53,7 +71,8 @@ nav ul li {
 //general styles for main
 .mainSectionOne,
 .mainSectionTwo,
-.mainSectionFour {
+.mainSectionFour,
+.blogSectionOne {
     background-color: $primary4;
 }
 
@@ -63,15 +82,20 @@ nav ul li {
 }
 
 //button style
-button {
+button,
+input[type="submit"] {
     padding: 10px 30px;
     border: 1px transparent solid;
     background: $black;
     color: $accent;
+    line-height: 32px;
 }
 
 button:hover,
-button:focus {
+button:focus,
+input[type="submit"]:hover,
+input[type="submit"]:focus {
     background: $accent;
     color: $black;
 }
+

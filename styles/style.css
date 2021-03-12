@@ -251,14 +251,30 @@ button,
 li {
   margin: 0;
   padding: 0;
+}
+
+nav,
+h1,
+h2,
+h3,
+form,
+button {
   font-family: "Oswald", sans-serif;
 }
 
 h1,
 h2,
 h3,
+input[type="submit"],
 button {
+  letter-spacing: 1px;
   text-transform: uppercase;
+}
+
+.blogHeader h1,
+.contactHeader h1 {
+  line-height: 92px;
+  font-size: 4rem;
 }
 
 img {
@@ -271,6 +287,8 @@ img {
 
 body {
   font-family: "Cabin", sans-serif;
+  letter-spacing: 0;
+  line-height: 32px;
 }
 
 nav ul li {
@@ -289,7 +307,8 @@ nav ul li a {
 
 .mainSectionOne,
 .mainSectionTwo,
-.mainSectionFour {
+.mainSectionFour,
+.blogSectionOne {
   background-color: #F6F6F6;
 }
 
@@ -298,29 +317,34 @@ nav ul li a {
   background: #FFFFFF;
 }
 
-button {
+button,
+input[type="submit"] {
   padding: 10px 30px;
   border: 1px transparent solid;
   background: #171717;
   color: #F38D8D;
+  line-height: 32px;
 }
 
 button:hover,
-button:focus {
+button:focus,
+input[type="submit"]:hover,
+input[type="submit"]:focus {
   background: #F38D8D;
   color: #171717;
 }
 
-.mainHeader {
-  height: 70vh;
+Header {
+  height: 60vh;
   background-color: #B9DDE7;
 }
 
-.mainHeader nav {
+nav {
   height: 10vh;
+  background-color: #B9DDE7;
 }
 
-.mainHeader nav ul {
+nav ul {
   height: 100%;
   width: 50%;
   display: -webkit-box;
@@ -335,7 +359,12 @@ button:focus {
           align-items: center;
 }
 
-.mainHeader h2 {
+nav ul li a {
+  line-height: 29px;
+  letter-spacing: 1px;
+}
+
+h2 {
   font-size: 2.1rem;
 }
 
@@ -370,7 +399,7 @@ h1 {
 .headerImg {
   width: 35%;
   position: relative;
-  top: 50px;
+  top: 40px;
   -webkit-box-shadow: 20px 20px 0 0 #FFFFFF;
           box-shadow: 20px 20px 0 0 #FFFFFF;
 }
@@ -563,13 +592,13 @@ h3 {
           align-items: center;
 }
 
-.sectionThreeText {
+.sectionFourText {
   margin-left: 100px;
   width: 65%;
 }
 
 .gallery {
-  height: 50vh;
+  height: 60vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -578,10 +607,13 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .gallery img {
-  width: calc(33% - 50px);
+  width: calc(33% - 20px);
   margin-right: 20px;
 }
 
@@ -598,4 +630,87 @@ footer {
 
 footer p {
   padding-top: 15px;
+}
+
+.blogHeader {
+  height: 50vh;
+  background-image: url(../../assets/blog-image-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.blogHeader h1 {
+  position: absolute;
+  bottom: -40px;
+}
+
+.blogSectionOne {
+  padding-top: 100px;
+}
+
+.asideSection {
+  width: calc(30% - 40px);
+  margin-right: 40px;
+}
+
+.asideSection h3 {
+  font-size: 1.2rem;
+}
+
+.aboutHarper,
+.recentPost,
+.blog,
+article {
+  background-color: #FFFFFF;
+  padding: 40px;
+  margin-bottom: 20px;
+}
+
+.aboutHarper {
+  height: 600px;
+  margin-bottom: 40px;
+}
+
+.aboutHarper h3 {
+  margin-top: 20px;
+}
+
+.recentPost {
+  height: 300px;
+}
+
+.recentPost h3 {
+  margin-top: 10px;
+}
+
+.blogDisplay {
+  width: 70%;
+}
+
+.blogWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.blog,
+article:last-child {
+  border-bottom: 5px solid #227284;
+}
+
+article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+article .profilePic {
+  width: 15%;
+}
+
+.comment {
+  width: calc(85% - 20px);
+  margin-left: 20px;
 }
