@@ -375,7 +375,6 @@ h1 {
           box-shadow: 20px 20px 0 0 #FFFFFF;
 }
 
-.mainSectionOne,
 .sectionOneFlex {
   height: 40vh;
 }
@@ -406,7 +405,6 @@ h1 {
   margin-bottom: 50px;
 }
 
-.mainSectionTwo,
 .sectionTwoFlex {
   height: 60vh;
 }
@@ -451,7 +449,6 @@ h3 {
   padding: 10px;
 }
 
-.mainSectionThree,
 .sectionThreeFlex {
   height: 90vh;
 }
@@ -537,7 +534,7 @@ h3 {
 
 .imgOneShadow {
   background-color: #68B0C1;
-  top: 0px;
+  top: 0;
 }
 
 .imgTwoShadow {
@@ -545,10 +542,6 @@ h3 {
   right: 0;
   top: 60%;
   width: 49%;
-}
-
-.mainSectionFour {
-  height: 50vh;
 }
 
 .mainSectionFour img {
@@ -573,4 +566,25 @@ h3 {
 .sectionThreeText {
   margin-left: 100px;
   width: 65%;
+}
+
+.gallery {
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.gallery img {
+  width: calc(33% - 50px);
+  margin-right: 20px;
+}
+
+.gallery img:last-child {
+  margin-right: 0;
 }

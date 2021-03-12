@@ -49,7 +49,6 @@ h1 {
 }
 
 // Section One styling
-.mainSectionOne,
 .sectionOneFlex {
     height: 40vh;
 }
@@ -70,7 +69,6 @@ h1 {
 }
 
 //Section Two Styling
-.mainSectionTwo,
 .sectionTwoFlex {
     height: 60vh;
 }
@@ -109,7 +107,6 @@ h3 {
 }
 
 // Section Three Styling
-.mainSectionThree,
 .sectionThreeFlex {
     height: 90vh;
 }
@@ -175,7 +172,7 @@ h3 {
 
 .imgOneShadow {
     background-color: $primary2;
-    top: 0px;
+    top: 0;
 }
 
 .imgTwoShadow {
@@ -189,10 +186,6 @@ h3 {
 
 
 //Section Four Styling
-
-.mainSectionFour {
-    height: 50vh;
-}
 
 .mainSectionFour img {
     width: calc(35% - 100px);
@@ -212,3 +205,20 @@ h3 {
 }
 
 // Section Five Styling
+
+.gallery {
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    img {
+        width: calc(33% - 50px);
+        margin-right: 20px;
+    }
+}
+
+.gallery img:last-child{
+    margin-right: 0;
+}
+
+//section footer style
