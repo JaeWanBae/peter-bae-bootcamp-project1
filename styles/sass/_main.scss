@@ -27,8 +27,7 @@ h2 {
 }
 
 h1 {
-    font-size: 7rem;
-    position: relative;
+    font-size: 6rem;
 }
 
 .titleContainer {
@@ -41,8 +40,8 @@ h1 {
                 .titleImg {
                     width: 150px;
                     position: absolute;
-                    top: -35px;
-                    right: -40px;
+                    top: -100px;
+                    right: -50px;
                 }
         }
 }
@@ -237,5 +236,5 @@ footer {
 }
 
 footer p {
-    padding-top: 15px;
+    padding-top: 10px;
 }

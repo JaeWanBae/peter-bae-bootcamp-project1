@@ -258,7 +258,8 @@ h1,
 h2,
 h3,
 form,
-button {
+button,
+input[type="submit"] {
   font-family: "Oswald", sans-serif;
 }
 
@@ -369,8 +370,7 @@ h2 {
 }
 
 h1 {
-  font-size: 7rem;
-  position: relative;
+  font-size: 6rem;
 }
 
 .titleContainer {
@@ -392,8 +392,8 @@ h1 {
 .titleContainer .title .titleImg {
   width: 150px;
   position: absolute;
-  top: -35px;
-  right: -40px;
+  top: -100px;
+  right: -50px;
 }
 
 .headerImg {
@@ -629,7 +629,7 @@ footer {
 }
 
 footer p {
-  padding-top: 15px;
+  padding-top: 10px;
 }
 
 .blogHeader {
@@ -713,4 +713,63 @@ article .profilePic {
 .comment {
   width: calc(85% - 20px);
   margin-left: 20px;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+form input[type="text"] {
+  width: calc(50% - 10px);
+  padding: 20px;
+}
+
+textarea,
+input[type="submit"] {
+  width: 100%;
+}
+
+input[type="text"]:first-child {
+  margin-right: 20px;
+}
+
+textarea {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+input[type="text"],
+textarea {
+  border: none;
+  background: #FFFFFF;
+}
+
+::-webkit-input-placeholder {
+  color: #171717;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #171717;
+  opacity: 1;
+}
+
+::-ms-input-placeholder {
+  color: #171717;
+  opacity: 1;
+}
+
+::placeholder {
+  color: #171717;
+  opacity: 1;
 }
