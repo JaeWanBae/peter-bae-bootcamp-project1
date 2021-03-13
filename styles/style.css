@@ -237,7 +237,6 @@ html {
 
 html {
   font-size: 125%;
-  color: #171717;
 }
 
 nav,
@@ -270,6 +269,19 @@ input[type="submit"],
 button {
   letter-spacing: 1px;
   text-transform: uppercase;
+}
+
+a {
+  color: #171717;
+}
+
+a:visited {
+  color: #171717;
+}
+
+a:hover,
+a:focus {
+  color: #FFFFFF;
 }
 
 .blogHeader h1,
@@ -309,7 +321,8 @@ nav ul li a {
 .mainSectionOne,
 .mainSectionTwo,
 .mainSectionFour,
-.blogSectionOne {
+.blogSectionOne,
+.contactSectionOne {
   background-color: #F6F6F6;
 }
 
@@ -632,18 +645,23 @@ footer p {
   padding-top: 10px;
 }
 
-.blogHeader {
+.blogHeader,
+.contactHeader {
   height: 50vh;
-  background-image: url(../../assets/blog-image-1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   position: relative;
 }
 
-.blogHeader h1 {
+.blogHeader h1,
+.contactHeader h1 {
   position: absolute;
   bottom: -40px;
+}
+
+.blogHeader {
+  background-image: url(../assets/blog-image-1.jpg);
 }
 
 .blogSectionOne {
@@ -683,6 +701,15 @@ article {
 
 .recentPost h3 {
   margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.recentPost h3 ul li {
+  font-size: 2px;
+}
+
+.recentPost a {
+  text-decoration: none;
 }
 
 .blogDisplay {
@@ -772,4 +799,9 @@ textarea {
 ::placeholder {
   color: #171717;
   opacity: 1;
+}
+
+.contactHeader {
+  height: 30vh;
+  background-image: url(../assets/contact-img-1.jpg);
 }

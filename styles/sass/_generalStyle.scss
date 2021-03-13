@@ -1,7 +1,6 @@
 // general stripping and img sizing
 html {
     font-size: 125%;
-    color: $black;
 }
 
 nav,
@@ -34,6 +33,18 @@ input[type="submit"],
 button {
     letter-spacing: 1px;
     text-transform: uppercase;
+}
+
+a {
+    color: $black;
+}
+a:visited {
+    color: $black;
+}
+
+a:hover,
+a:focus {
+    color: $white;
 }
 
 .blogHeader h1,
@@ -73,7 +84,8 @@ nav ul li {
 .mainSectionOne,
 .mainSectionTwo,
 .mainSectionFour,
-.blogSectionOne {
+.blogSectionOne,
+.contactSectionOne {
     background-color: $primary4;
 }
 
