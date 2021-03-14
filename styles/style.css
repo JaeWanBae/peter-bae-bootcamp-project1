@@ -366,8 +366,9 @@ nav ul {
   display: flex;
   margin: 0 auto;
   text-align: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -393,13 +394,13 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .titleContainer .title {
   position: relative;
-  margin-right: 200px;
 }
 
 .titleContainer .title .titleImg {
@@ -447,10 +448,6 @@ h1 {
   margin-bottom: 50px;
 }
 
-.sectionTwoFlex {
-  height: 60vh;
-}
-
 h3 {
   font-size: 1.6rem;
 }
@@ -492,10 +489,6 @@ h3 {
 }
 
 .sectionThreeFlex {
-  height: 90vh;
-}
-
-.sectionThreeFlex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -522,11 +515,8 @@ h3 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.textContainer p {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .third,
@@ -593,7 +583,6 @@ h3 {
 }
 
 .sectionFourFlex {
-  height: 50vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -603,6 +592,8 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .sectionFourText {
@@ -611,7 +602,6 @@ h3 {
 }
 
 .gallery {
-  height: 60vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -623,6 +613,8 @@ h3 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .gallery img {
@@ -862,4 +854,39 @@ textarea {
 .contactInfo li a {
   font-weight: 700;
   text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+  .wrapper {
+    max-width: 1000px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .wrapper {
+    max-width: 800px;
+  }
+  header {
+    height: 40vh;
+  }
+}
+
+@media (max-width: 800px) {
+  .wrapper {
+    width: 700px;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  .titleContainer .title .titleImg {
+    width: 100px;
+    top: -60px;
+    right: -25px;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+  h3 {
+    font-size: 1.3rem;
+  }
 }

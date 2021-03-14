@@ -1,0 +1,42 @@
+@media (max-width: 1200px) {
+    .wrapper {
+        max-width: 1000px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .wrapper {
+        max-width: 800px;
+        
+    }
+
+    header {
+        height: 40vh;
+    }
+
+}
+
+@media (max-width: 800px) {
+    // Set min-width on img, change gallery direction. and Harper's travel Section. Add Burger Menu to nav. 
+
+    .wrapper {
+        width: 700px; 
+    }
+    h1 {
+        font-size: 4rem;
+    }
+
+    .titleContainer .title .titleImg {
+        width: 100px;
+        top: -60px;
+        right: -25px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+}
