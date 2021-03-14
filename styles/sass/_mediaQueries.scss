@@ -2,6 +2,10 @@
     .wrapper {
         max-width: 1000px;
     }
+
+    .blog h2 {
+        line-height: 40px;
+    }
 }
 
 @media (max-width: 1000px) {
@@ -14,11 +18,58 @@
         height: 40vh;
     }
 
+    .blogWrap {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blogDisplay {
+        width: 100%;
+    }
+
+    .asideSection {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-right: 0;
+        .aboutHarper {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            padding: 20px 20px;
+            img {
+                width: calc(50% - 20px);
+                margin-right: 20px;
+            }
+        }
+    }
+
+    .recentPost {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+        height: auto;
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            padding-left: 40px;
+            li {
+                width: 50%;
+            }
+        }
+    }
+    
+
+    .contactFlex aside {
+        padding: 20px;
+    }
+
 }
 
 @media (max-width: 800px) {
-    // Set min-width on img, change gallery direction. and Harper's travel Section. Add Burger Menu to nav. 
-
     .wrapper {
         width: 700px; 
     }
@@ -39,4 +90,108 @@
     h3 {
         font-size: 1.3rem;
     }
+
+    .contactFlex {
+        flex-direction: column;
+        padding-bottom: 0;
+        aside {
+            margin-right: 0;
+            flex-direction: row;
+            width: 100%;
+            order: 2;
+            margin-bottom: 50px;
+            ul {
+                margin: 0;
+            }
+        }
+    }
+
+    .socialMedia {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 50%;
+        a {
+            font-size: 50px;
+        }
+    }
+
+    .contactInfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .burgerMenu {
+        display: block;
+    }
+
+    nav li a {
+        height: 0;
+        overflow: hidden;
+        position: absolute;
+    }
+
+    .sectionTwoContent {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .sectionThreeFlex img,
+    .sectionThreeFlex .textContaier {
+        width: 100%;
+    }
+
+    .first {
+        box-shadow: 20px 20px 0 0 $primary2;
+    }
+
+    .third {
+        box-shadow: 20px 20px 0 0 $primary3;
+        order: 0;
+        margin-top: 0;
+    }
+
+    .fourth button {
+        align-self: center;
+    }
+
+    .imgOneShadow, 
+    .imgTwoShadow {
+        visibility: hidden;
+    }
+
+    .sectionThreeFlex .textContainer {
+        width: 100%;
+        padding: 50px 0;
+        align-items: center;
+    }
+
+    .sectionFourFlex {
+        flex-direction: column;
+        img {
+            width: 50%;
+            margin-bottom: 50px;
+        }
+    }
+
+    .gallery { 
+        justify-content: center;
+        align-items: center;
+        img {
+        width: 60%;
+        margin-right: 0;
+        }
+    }
+
+    .sectionFourText {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .gallery img:nth-child(2) {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
 }

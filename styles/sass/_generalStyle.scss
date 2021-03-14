@@ -112,3 +112,15 @@ input[type="submit"]:focus {
     color: $black;
 }
 
+.burgerMenu {
+    font-size: 40px;
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    display: none;
+}
+
+.burgerMenu:hover,
+.burgerMenu:focus {
+    color: $white;
+}
