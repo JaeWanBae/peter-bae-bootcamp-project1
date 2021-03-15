@@ -941,6 +941,7 @@ textarea {
             align-items: center;
     padding: 40px;
     height: auto;
+    margin-bottom: 40px;
   }
   .recentPost ul {
     display: -webkit-box;
