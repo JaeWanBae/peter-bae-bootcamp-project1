@@ -353,7 +353,7 @@ input[type="submit"]:focus {
   position: absolute;
   top: 20px;
   right: 40px;
-  display: none;
+  visibility: hidden;
 }
 
 .burgerMenu:hover,
@@ -425,6 +425,7 @@ h1 {
 
 .headerImg {
   width: 35%;
+  min-width: 200px;
   position: relative;
   top: 40px;
   -webkit-box-shadow: 20px 20px 0 0 #FFFFFF;
@@ -919,10 +920,15 @@ textarea {
         -ms-flex-align: center;
             align-items: center;
     padding: 20px 20px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .asideSection .aboutHarper img {
-    width: calc(50% - 20px);
+    width: calc(30% - 20px);
     margin-right: 20px;
+  }
+  .aboutText {
+    width: 70%;
   }
   .recentPost {
     width: 100%;
@@ -961,7 +967,7 @@ textarea {
 
 @media (max-width: 800px) {
   .wrapper {
-    width: 700px;
+    width: 600px;
   }
   h1 {
     font-size: 4rem;
@@ -1027,16 +1033,35 @@ textarea {
             justify-content: center;
   }
   .burgerMenu {
-    display: block;
+    visibility: visible;
   }
   nav li a {
     height: 0;
     overflow: hidden;
     position: absolute;
   }
+  .mainSectionOne {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .sectionOneFlex {
+    margin: 0 auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    width: 80%;
+  }
   .sectionTwoContent {
     width: 100%;
     margin-right: 0;
+  }
+  .sectionTwoContent:nth-child(2) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .sectionTwoContent:nth-child(3) {
+    margin-bottom: 20px;
   }
   .sectionThreeFlex img,
   .sectionThreeFlex .textContaier {
@@ -1069,6 +1094,7 @@ textarea {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    text-align: center;
   }
   .sectionFourFlex {
     -webkit-box-orient: vertical;
@@ -1099,5 +1125,57 @@ textarea {
   .gallery img:nth-child(2) {
     margin-top: 20px;
     margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .wrapper {
+    width: 400px;
+  }
+  .recentPost {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .recentPost ul li {
+    width: 100%;
+  }
+  .asideSection .aboutHarper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .asideSection .aboutHarper img {
+    width: 40%;
+    margin-right: 0;
+  }
+  .mainLogo,
+  .headerImg {
+    display: none;
+  }
+  .title {
+    margin-top: 150px;
+  }
+  .title h1 {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .wrapper {
+    width: 320px;
+  }
+  .title h1 {
+    font-size: 4rem;
+  }
+  .contactHeader h1 {
+    font-size: 3rem;
+  }
+  .sectionFourText {
+    width: 100%;
   }
 }

@@ -117,7 +117,7 @@ input[type="submit"]:focus {
     position: absolute;
     top: 20px;
     right: 40px;
-    display: none;
+    visibility: hidden;
 }
 
 .burgerMenu:hover,
