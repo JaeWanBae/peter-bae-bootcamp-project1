@@ -11,15 +11,23 @@
     <title>Project1</title>
 </head>
 <body>
-    <nav>
+    <nav class="burgerNav">
+        <i class="fas fa-bars burgerMenu"></i>
         <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <nav>
+        <ul class="mainUl">
             <li><a href="index.html">Home</a></li>
             <li><a href="about">About</a></li>
             <li><h2>Harper</h2></li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
-        <i class="fas fa-bars burgerMenu"></i>
     </nav>
     <header class="blogHeader">
         <div class="wrapper">
@@ -93,5 +101,7 @@
     <footer>
         <p>Copyright<i class="far fa-copyright copyrightIcon"></i> 2018 HackerYou</p>
     </footer>
+
+    <script src="./scripts.js"></script>
 </body>
 </html>
