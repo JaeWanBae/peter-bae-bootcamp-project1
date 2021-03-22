@@ -4,7 +4,6 @@
 const navElement = document.querySelector(`nav`)
 
 navElement.addEventListener(`click`, function(event) {
-    console.log(event.target.tagName)
     if(event.target.tagName === `I`){
         showBurgerNav(event.target);
     }
@@ -16,3 +15,5 @@ function showBurgerNav(nav) {
 
 
 //Comment section
+// On submit grab value from form
+// Take value of submit form and append it to comment section
