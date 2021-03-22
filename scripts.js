@@ -13,13 +13,6 @@ function showBurgerNav(nav) {
     nav.parentElement.classList.toggle(`burgerNavShow`)
 }
 
-
-//Comment section
-// grab value from form on submit
-// dynamically create new article sections for comment
-// take value from form and append to comment section
-
-
 // Get date/month and translate from number to string
 const today = new Date();
 const dayOfWeek = new Array(7);
@@ -47,12 +40,14 @@ monthOfYear[10] = `November`;
 monthOfYear[11] = `December`;
 const month = monthOfYear[today.getMonth()];
 
-const date = today.getDate();
 // Figure out how to use if conditional to get st/nd/rd/th to show up after cretain dates
-
+const date = today.getDate();
 const year = today.getFullYear();
 
-
+//Comment section
+// grab value from form on submit
+// dynamically create new article sections for comment
+// take value from form and append to comment section
 
 const commentForm = document.querySelector(`.blogComment`)
 
