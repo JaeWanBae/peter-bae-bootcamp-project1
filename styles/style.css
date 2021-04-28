@@ -351,14 +351,49 @@ input[type="submit"]:focus {
 .burgerMenu {
   font-size: 40px;
   position: absolute;
-  top: 20px;
+  top: -60px;
   right: 40px;
   visibility: hidden;
+  cursor: pointer;
 }
 
 .burgerMenu:hover,
 .burgerMenu:focus {
   color: #FFFFFF;
+}
+
+.burgerNav {
+  width: 20%;
+  min-width: 170px;
+  position: absolute;
+  right: 0;
+  top: 8vh;
+  z-index: 5;
+  height: 300px;
+  border: solid 1px #68B0C1;
+  background-color: rgba(255, 255, 255, 0.8);
+  visibility: hidden;
+}
+
+.burgerNavShow {
+  visibility: visible;
+}
+
+.burgerNav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.burgerNav ul li a:hover,
+.burgerNav ul li a:focus {
+  color: #68B0C1;
 }
 
 Header {
@@ -1035,7 +1070,7 @@ textarea {
   .burgerMenu {
     visibility: visible;
   }
-  nav li a {
+  .mainUl li a {
     height: 0;
     overflow: hidden;
     position: absolute;
